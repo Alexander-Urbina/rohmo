@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180408" />
+      <stop offset="100%" stop-color="#2a0a0d" />
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff248" />
+      <stop offset="100%" stop-color="#ff6596" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)" />
+  
+  <!-- Road visualization -->
+  <g transform="translate(600, 315) scale(1.5)">
+    <!-- Road -->
+    <rect x="-200" y="-100" width="400" height="200" fill="#333" />
+    
+    <!-- Road markings -->
+    <rect x="-5" y="-100" width="10" height="200" fill="#fff" />
+    
+    <!-- Pothole 1 -->
+    <circle cx="100" cy="0" r="30" fill="#222" />
+    <circle cx="100" cy="0" r="35" fill="none" stroke="#ff006e" stroke-width="3" filter="url(#glow)" />
+    
+    <!-- Pothole 2 -->
+    <circle cx="-120" cy="40" r="20" fill="#222" />
+    <circle cx="-120" cy="40" r="25" fill="none" stroke="#ff006e" stroke-width="3" filter="url(#glow)" />
+    
+    <!-- Crack -->
+    <path d="M-150 -50 Q-100 -30 -50 -20 T50 0" fill="none" stroke="#222" stroke-width="5" />
+    <path d="M-150 -50 Q-100 -30 -50 -20 T50 0" fill="none" stroke="#3a86ff" stroke-width="3" filter="url(#glow)" />
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(600, 200)">
+    <text x="0" y="0" font-family="Montserrat, sans-serif" font-size="80" font-weight="900" text-anchor="middle" fill="url(#text-gradient)">RoHMo AI</text>
+    <text x="0" y="100" font-family="Inter, sans-serif" font-size="40" font-weight="300" text-anchor="middle" fill="#f8f9fa">Automated Road Defect Detection</text>
+  </g>
+  
+  <!-- Tagline -->
+  <text x="600" y="350" font-family="Inter, sans-serif" font-size="24" font-weight="300" text-anchor="middle" fill="#f8f9fa">AI-powered analysis to identify, classify, and georeference road defects</text>
+  
+  <!-- URL -->
+  <text x="600" y="550" font-family="Inter, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#6c757d">rohmoai.com</text>
+</svg> 
